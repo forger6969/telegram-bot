@@ -25,5 +25,5 @@ bot.on('message', msg => {
 });
 
 bot.on('polling_error', (error) => {
-    console.error('[polling_error]', error);
+    console.error('[polling_error]', JSON.stringify(error, null, 2));
 });
