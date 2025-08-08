@@ -18,24 +18,32 @@ bot.on('message', msg => {
 
         bot.sendMessage(chatId, 'hello! \nMy name is Saidazim (forger). \nage 15 \nim sutdy with IT Front-end')
 
-    } 
-    
-     else if (text == '/projects') {
+    }
+
+    else if (text == '/projects') {
 
         bot.sendMessage(chatId, 'My porjects:\nhttps://forger6969.github.io/StarBucks/\nhttps://forger6969.github.io/CoinFlip\nhttps://forger6969.github.io/portfolio/ ')
 
-    } 
+    }
 
-     else if (text == '/help') {
+    else if (text == '/help') {
 
         bot.sendMessage(chatId, 'Список доступный команд: /name \n /projects \n /help')
 
     } else {
         bot.sendMessage(chatId, 'Неизвестная команда напишите /help чтобы увидеть список команд')
     }
-    
-    
-    
-   
+
+
+
+    const chatId = msg.chat.id;
+    const userName = msg.from.username || `${msg.from.first_name} ${msg.from.last_name || ''}`;
+    const messageText = msg.text;
+
+    console.log(`Пользователь: ${userName} (ID: ${chatId}) написал: ${messageText}`);
+
+
+
+
 
 })
