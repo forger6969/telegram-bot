@@ -23,3 +23,7 @@ bot.on('message', msg => {
         bot.sendMessage(chatId, 'Неизвестная команда. Напишите /help чтобы увидеть список команд.');
     }
 });
+
+bot.on('polling_error', (error) => {
+    console.error('[polling_error]', error);
+});
