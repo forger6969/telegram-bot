@@ -36,11 +36,11 @@ bot.on('message', msg => {
 
 
 
-    const chatId = msg.chat.id;
+    const chatid2 = msg.chat.id;
     const userName = msg.from.username || `${msg.from.first_name} ${msg.from.last_name || ''}`;
     const messageText = msg.text;
 
-    console.log(`Пользователь: ${userName} (ID: ${chatId}) написал: ${messageText}`);
+    console.log(`Пользователь: ${userName} (ID: ${chatId2}) написал: ${messageText}`);
 
 
 
